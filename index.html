@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+<!--Lato 700-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!--Lato 700-->
+</head>
+
+<body>
+    <div class="wrap" id="wrap">
+        <div class="header">Вітаю, у додатку</div>
+        <div class="header">WeatherApp</div>
+    
+
+
+    <form class="decor">
+<div class="form-left-decoration"></div>
+<div class="form-right-decoration"></div>
+<div class="circle"></div>
+<div class="form-inner">
+
+    <p class="option__header">Enter Your City</p>
+
+    <input class="c-checkbox" type="checkbox" id="checkbox">
+    <div class="c-formContainer">
+      <form class="c-form" action="">
+        <input class="c-form__input" id="cityName" placeholder="Write Here" type="text" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+       
+        <label class="c-form__toggle" for="checkbox" data-title="Notify me"></label>
+      </form>
+    </div>
+    
+    <button id="getWeather">Click!</button>
+    <div class="weatherInfo" id="weatherInfo"></div>
+</div>
+</form>
+</div>
+
+<div class="page2">
+    <div class="page2__header header">Information which we find</div>
+    <div class="page2__obj">
+        <div class="page2__obj__item page2__obj__itemWithImg">
+            <div class="page2__obj__item__name" id="nameOfCity">Lviv</div>
+            <div class="page2__obj__item__name page2__obj__item__name_2 " id="nameOfCounrtry">UA</div>
+          
+            <div class="page2__obj__item__countryImg"></div>
+        </div>
+
+        <div class="page2__obj__item">
+             <div class="page2__obj__item__colon">
+                <div class="page2__obj__item__colon__name">Main Temperature</div>
+                <div class="page2__obj__item__name page2__obj__item__name_2" id="realTemp">30 °C</div>
+             </div>
+             <div class="page2__obj__item__colon">
+                <div class="page2__obj__item__colon__name">Feels Like</div>
+                <div class="page2__obj__item__name page2__obj__item__colon__descr" id="fellTemp">25 °C</div>
+             </div>
+        </div>
+        <div class="page2__obj__item page2__obj__item__withImg2 ">
+               <div class="page2__obj__item__name page2__obj__item__colon__descr" id="mainWeatherInCountry">Heavy Rain</div>     
+    </div>
+
+    <div class="page2__obj__item ">
+        <div class="page2__obj__item__windImg"></div>
+ 
+        <div class="page2__obj__item__name page2__obj__item__colon__descr" id="weatherWind">Wind Speed: 2.57 m/s</div>     
+</div>
+</div>
+</div>
+<script src="main.js">
+</script>    
+</body>
+</html>
